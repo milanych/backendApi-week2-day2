@@ -1,15 +1,22 @@
 //sport API
 
+require('dotenv').config();
 const sports = require('./sports.json')
 const express = require("express");
 const app = express()
-const port = 3000
+const port = process.env.PORT
 
 app.use(express.json())
 
 
 app.get("/", (req, res) => {
-  res.send("Hello Sport API")
+  res.setHeader("Content-Type", "text/html")
+  const welcomeText = `<h1>Hello Fruit API</h1><p><a href="/sports/all">List of all available sports</a><hr><a href="/sports/">JSON data</a></p><hr>
+  <p><ol><li>Add a key/value to sport example: <a href="/sports/update/football">on click equipmentCount key added</a>
+  <li>Delete sport example: <a href="/sports/delete/football">on click football will be deleted</a>
+  <li>Show an existed sport data example: <a href="/sports/football">show a football data</a>
+  <li>Error example: <a href="/sports/idontknow">error message</a></ol></p>`
+  res.end(welcomeText)
 })
 
 app.get("/sports", (req, res) => {
@@ -20,7 +27,7 @@ app.get("/sports", (req, res) => {
 
 
 
-//add a sport
+//add a sport (?)
 app.post('/sports', (req, res) => {
   const sport = req.body
   console.log(sport)
