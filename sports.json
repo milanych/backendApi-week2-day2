@@ -1,0 +1,62 @@
+[
+  {
+      "name": "Football",
+      "origin": "United Kingdom",
+      "equipment": ["Ball", "Cleats", "Shin Guards"],
+      "teamSize": 11
+    },
+    {
+      "name": "Basketball",
+      "origin": "United States",
+      "equipment": ["Ball", "Sneakers"],
+      "teamSize": 5
+    },
+    {
+      "name": "Baseball",
+      "origin": "United States",
+      "equipment": ["Ball", "Bat", "Glove"],
+      "teamSize": 9
+    },
+    {
+      "name": "Cricket",
+      "origin": "United Kingdom",
+      "equipment": ["Ball", "Bat", "Pads"],
+      "teamSize": 11
+    },
+    {
+      "name": "Tennis",
+      "origin": "France",
+      "equipment": ["Ball", "Racket"],
+      "teamSize": 1
+    },
+    {
+      "name": "Golf",
+      "origin": "Scotland",
+      "equipment": ["Ball", "Clubs"],
+      "teamSize": 1
+    },
+    {
+      "name": "Rugby",
+      "origin": "United Kingdom",
+      "equipment": ["Ball", "Cleats"],
+      "teamSize": 15
+    },
+    {
+      "name": "Ice Hockey",
+      "origin": "Canada",
+      "equipment": ["Puck", "Stick", "Skates"],
+      "teamSize": 6
+    },
+    {
+      "name": "Volleyball",
+      "origin": "United States",
+      "equipment": ["Ball", "Net"],
+      "teamSize": 6
+    },
+    {
+      "name": "Swimming",
+      "origin": "Global",
+      "equipment": ["Swimsuit", "Goggles"],
+      "teamSize": 1
+    }
+  ]
