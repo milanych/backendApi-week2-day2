@@ -1,10 +1,14 @@
 //sport API
 
 require('dotenv').config();
+const cors = require('cors');
+
 const sports = require('./sports.json')
 const express = require("express");
 const app = express()
 const port = process.env.PORT
+
+app.use(cors())
 
 app.use(express.json())
 
